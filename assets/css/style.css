@@ -1,0 +1,29 @@
+body {
+  font-family: Open Sans, sans-serif;
+}
+.email , .username , .confirm{
+    transition: all 0.3s ease;
+}
+.email:focus , .username:focus ,.confirm:focus{
+ outline:1px solid rgb(168, 168, 168);
+}
+.link{
+    text-decoration: none;
+    color: rgb(188, 179, 0);
+}
+.link:hover{
+    color: rgb(130, 123, 1);
+}
+.submit{
+    background-color: rgb(188, 163, 0);
+    color: #fff;
+}
+.form-check-input:focus{
+    background-color: rgb(188, 163, 0);
+    border: none;
+    outline: none;
+}
+.form-check-input:checked , .form-check-input::before{
+    border: none;
+    background-color: rgb(188, 163, 0);
+}
