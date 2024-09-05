@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
             setcookie('auth', $session, time() + 1728000, '/');
             deleteLoginSession($_SESSION['hash']);
             unset($_SESSION['hash'], $_SESSION['email']);
-            redirect('auth.php?action=login');
+            redirect('index.php');
 
         } else {
             setError('The enter token is wrong');
